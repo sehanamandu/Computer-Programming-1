@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main()
+
+{
+ printf("TASK1A\n\n");   
+ printf("Welcome to C++\n");
+ 
+
+    
+    printf("TASK1B\n\n");
+    printf("Welcome\nTo \n\nC++\n========\n");
+    printf("Welcome\n  to \nC++\n========\n");
+    printf("WELCOME TO \n  C++");
+}
