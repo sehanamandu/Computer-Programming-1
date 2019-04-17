@@ -18,5 +18,20 @@ void main()
     
         printf("the sum of both values are %d",c);
         
+ /*TASK 2b 
+write a c++ rpogram to calculate and print the area of a rectagle */
+    float x,y,z;
+    
+    printf("========== \n    TASK 2b    \n\n");
+        printf("input the value of the lenght\n");
+         scanf("%f",&y);
+        printf("input the value of the breadth\n");
+         scanf("%f",&x);
+         
+        z = x * y;
+        
+        printf("The area of the rectangle is %f",z);
+                
+        
     
 }
