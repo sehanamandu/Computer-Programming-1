@@ -1,0 +1,22 @@
+/*write a CPP program to accept two integers from the user and display their sum using arithmetic operator*/
+
+
+/*TASK 2a */
+
+#include <stdio.h>
+void main()
+
+{
+    int a,b,c;
+        
+        printf("input value for A\n");
+         scanf("%d",&a);
+        printf("input value for B\n");
+         scanf("%d",&b);
+         
+        c = a + b; 
+    
+        printf("the sum of both values are %d",c);
+        
+    
+}
