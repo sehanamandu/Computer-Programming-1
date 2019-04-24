@@ -1,0 +1,54 @@
+/*develop a student grading system using else if statement which displays the grade of student upon recieving the following input;
+1)student ID 2)Student Marks(for 6 subjects).
+calculate the total marks and percentage considering six hundred as the maximum mark
+the guidelines for grading less than 50-F,50-60 - D ,60-70 - C ,70-80 - B,80-90 - A, 90-100 - A* 
+Display the grade only if the student scores minimum 50 in all subjects
+*/
+
+#include <stdio.h>
+void main()
+{
+    
+float perc;
+float s1,s2,s3,s4,s5,s6;
+int ID;
+
+printf("input student iD");
+scanf("%d",iD);
+printf("input grade for Subject 1");
+scanf("%d",s2);
+printf("input grade for Subject 2");
+scanf("%d",s3);
+printf("input grade for Subject 3");
+scanf("%d",s4);
+printf("input grade for Subject 4");
+scanf("%d",s5);
+printf("input grade for Subject 5");
+scanf("%d",s5);
+printf("input grade for Subject 6");
+scanf("%d",s5);
+
+perc = ((s1+s2+s3+s4+s5+s6)/600)*100;
+
+if (perc>=0 && perc<=49)
+    {
+        printf("Grade:f");
+    }
+else if (perc >=50 && perc<60)
+    {
+        printf("Grade:D");
+    }
+else if (perc >=60 && perc<70)
+    {
+        printf("Grade:C");
+    }
+else if (perc >=70 && perc<80)
+    {
+        printf("Grade:B");
+    }    
+else (perc >=80 && perc<90)
+    {
+        printf("Grade:A");
+    }    
+    
+}
