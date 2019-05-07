@@ -18,11 +18,13 @@ void main()
     ave = sum/3;
     prod = a*b*c;
     
-    if (a>b) & (a>c)
+    printf("The sum of the values is %f \nThe Average is %f \nThe Product is %f",sum,ave,prod);
+    
+    if (a>b && a>c)
     {
         printf("A is greatest value\n");
     }
-    else if (b>a) & (b>c)
+    else if (b>a && b>c)
     {
         printf("B is the greatest value\n");
     }
@@ -31,11 +33,11 @@ void main()
         printf("C is the greatest value\n");
     }
     
-    if (a<b) & (a<c)
+    if (a<b && a<c)
     {
         printf("A is smallest value\n");
     }
-    else if (b<a) & (b<c)
+    else if (b<a && b<c)
     {
         printf("B is the smallest value\n");
     }
