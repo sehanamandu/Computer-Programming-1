@@ -1,0 +1,49 @@
+/*  Task 3
+3(b) */
+
+
+#include <stdio.h>
+
+void main()
+{
+    float a,b,c,sum,ave,prod ;
+    printf("please input value for A\n");
+    scanf("%f",&a);
+    printf("please input value for B\n");
+    scanf("%f",&b);
+    printf("please input value for C\n");
+    scanf("%f",&c);
+    
+    sum = a + b + c;
+    ave = sum/3;
+    prod = a*b*c;
+    
+    if (a>b) & (a>c)
+    {
+        printf("A is greatest value\n");
+    }
+    else if (b>a) & (b>c)
+    {
+        printf("B is the greatest value\n");
+    }
+    else
+    {
+        printf("C is the greatest value\n");
+    }
+    
+    if (a<b) & (a<c)
+    {
+        printf("A is smallest value\n");
+    }
+    else if (b<a) & (b<c)
+    {
+        printf("B is the smallest value\n");
+    }
+    else
+    {
+        printf("C is the smallest value\n");
+    }
+    
+}
+    
+    
