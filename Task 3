@@ -49,3 +49,51 @@ void main()
 }
     
     
+ALTERANTE METHOD
+
+/*  Task 3
+3(b) */
+
+
+#include <stdio.h>
+
+void main()
+{
+    int i,j,sum,prod=1 ;
+    int values[3];
+    int rec1,rec2;
+    int count;
+    float ave;
+    
+    
+    for(i=1;i<=3;i++)
+    {
+        
+    printf("please input value %d \n",i);
+    scanf("%d",&values[i]);
+    
+    
+    sum = sum + values[i];
+    prod = prod*values[i];
+    }
+    
+    
+    ave = (float)(sum/3);
+    int max = 0,min;
+    
+    
+    for(j=1;j<=3;j++)
+    {
+        if (values[j]>max)
+        max=values[j];
+        min=max;
+        rec1=j;
+        
+        if(values[j]<min)
+        min=values[j];
+        rec2=j;
+    }
+    
+     printf("The sum of the values is %d \nThe Average is %d \nThe Product is %d \n",sum,ave,prod);
+     printf("The largest number is value %d and the smallest value is %d \n",rec1,rec2);
+}
