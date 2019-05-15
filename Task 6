@@ -1,0 +1,37 @@
+/*6a*/
+
+#include <stdio.h>
+
+void main()
+{
+    int x,y,i=1,z=0;
+    printf("Please input number to check\n");
+    scanf("%d",&x);
+    
+    do
+    {
+        if (x%i==0)
+            z++;
+        i++;
+    }while(i<=x);
+    
+    if(z==2)
+    printf("Number is prime");
+    else printf("Number is not Prime");
+    
+}
+
+/*6b*/
+
+#include <stdio.h>
+void main()
+{
+    int i=1;
+    for(i=0;i<=20;i++)
+    {
+        if(i%3==0)
+        continue;
+        else
+        printf("%d\n",i);
+    }
+}
