@@ -1,0 +1,43 @@
+#include <stdio.h>
+void main()
+{
+    int c=0,list[10]={1,2,3,4,5,6,7,8,9,10};
+    
+    printf("Array Index | Value\n");
+    printf("=====================\n");
+    do
+    {
+        printf("    %d       |   %d\n",c,list[c]);
+        c++;
+    }while(c<10);
+}
+
+METHOD 2
+#include <stdio.h>
+void main()
+{
+    int c=0,list[10]={1,2,3,4,5,6,7,8,9,10};
+    
+    printf("Array Index | Value\n");
+    printf("=====================\n");
+    for(c=0;c<10;c++)
+    {
+        printf("    %d       |   %d\n",c,list[c]);
+    }
+}
+
+
+/*5b*/
+
+#include <stdio.h>
+
+void main()
+{
+    int c=0,list[10];
+    do
+    {
+        c++;
+        list[c]=0;
+        printf("Array posotion %d value = %d \n",c,list[c]);
+    }while(c<10);
+}
