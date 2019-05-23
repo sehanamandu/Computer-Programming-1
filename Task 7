@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+void main()
+
+{
+	int i,j,min,max;
+	
+	printf("input size of array\n");
+	scanf("%d",&i);
+	
+	int a[i];
+	
+	//recording bit
+	for(j=1;j<=i;j++)
+	{
+	printf("input value %d\n");
+	scanf("%d",&a[j]);
+	}
+	
+	int temp;
+	
+	//sorting code (bubble sort)
+	for(j=1;j<=i;j++)
+	{
+		if(a[j]>a[j+1])
+		{
+			temp=a[j];
+			a[j]=a[j+1];
+			a[j+1]=temp;
+		}
+	}
+	
+	for(j=1;j<=i;j++)
+	{
+	 printf("location %d value %d\n",j,a[j]);	
+	}
+	printf("largest %d smallest %d\n",a[1],a[i]);
+}
