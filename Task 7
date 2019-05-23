@@ -38,16 +38,42 @@ void main()
 }
 
 
-int a[100],n,i,j,t;
-printf("Enter the size of the list:In");
-scanf('%d",&n);
-printf("enter the elements:In");
-for(i-0;in;i++)
-scanf("%d",&alil);
-for(i-0;ic10;i++)
-for(j-i+1;j<n;j+)
-if(alij>aUl)
-tealil;
-a[i]=a[j];
-a[j]=t;
+#include <stdio.h>
 
+void main()
+{
+    int n1,temp,i,j;
+	int pass;
+	//declaring array with desired size
+	printf("input size of array\n");
+	scanf("%d",&i);
+	
+	int a[i];
+	
+	//recording bit
+	for(j=0;j<=i;j++)
+	{
+	printf("input value %d\n",j+1);
+	scanf("%d",&a[j]);
+	}
+	
+	//sorting
+	
+	for(pass=0;pass<=i;pass++)
+	{
+	    for(n1=pass+1;n1<=i;n1++)
+	    {
+	        if(a[n1]>a[n1+1])
+	        temp=a[n1+1];
+	        a[n1+1]=a[n1];
+	        a[n1]=temp;
+	    }
+	}
+    
+    //print
+    for(j=0;j<=i;j++)
+	{
+	 printf("location %d value %d\n",j,a[j]);	
+	}
+
+}
