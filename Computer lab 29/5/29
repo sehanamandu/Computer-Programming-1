@@ -1,0 +1,103 @@
+/*Write a C program to reverse a given string without using string reverse funtion*/
+
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+int i,j;
+char s[20],s1[20];
+
+ printf("Input string\n");
+ gets(s);
+ 
+ j=strlen(s);
+ 
+ for(i=j;i>=0;i--)
+ {
+printf("%c",s[i]);     
+ }
+     
+ 
+}
+
+
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+int i,j=0,l1,l2;
+char s[20],s1[20];
+
+ printf("Input string 1\n");
+ gets(s);
+ printf("Input string 2\n");
+ gets(s1);
+ 
+ l1=strlen(s);
+ l2=strlen(s1);
+ 
+ for(i=l1;i<l1+l2;i++)
+ {
+    s[i]=s1[j];
+    j++;
+ }
+    for(i=0;i<=strlen(s);i++)
+    {
+        printf("%c",s[i]);
+    }
+ 
+}
+
+/*Write a C program to convert string to lowercase without using strupr*/
+
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+int i,j=0,l1,l2,s1[20];
+char s[20];
+
+ printf("Input string 1\n");
+ scanf("%s",&s);
+ 
+ l1=strlen(s);
+ 
+ for(i=0;i<=l1;i++)
+ {
+    s1[i]=s[i];
+    s1[i]=(s1[i]-32);
+    printf("%c",s1[i]);
+ }
+ 
+}
+/*Write a program to read string in uppercase or lowercase and print its case
+*/
+
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+int i,j=0,l1,l2,s1[20];
+char s[20];
+
+ printf("Input string 1\n");
+ scanf("%s",&s);
+ 
+ l1=strlen(s);
+ 
+    s1[i]=s[i];
+    if(s1[i]<91)
+    {
+        printf("string starts with uppercase");
+    }
+    else
+    {
+        printf("string starts with lowercase");
+    }
+ 
+ 
+}
