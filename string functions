@@ -1,0 +1,38 @@
+//program to demonstrate string functions
+
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int func;
+    char s[100],s2[100];
+    printf("Input first string\n");
+    fgets(s,100,stdin);
+    printf("Input seond string\n");
+    fgets(s2,100,stdin);
+    printf("Enter number for function\n");
+    printf("1 : Display length of string\n");
+    printf("2 : Combines two strings\n");
+    printf("3 : Reverses the input string\n");
+    printf("4 : Converts string to uppercase\n");
+    printf("5 : Converts string to lowercase\nInput :");
+    scanf("%d",&func);
+    
+    switch(func)
+    {
+    case 1 :
+        printf("The length of string is %f",strlen(s));
+        break;
+    case 2 :
+        printf("%s",strcat(s,s2));
+        break;
+    case 3 :
+       
+        break;
+    }
+    
+    
+    return 0;
+}
