@@ -1,0 +1,57 @@
+#include<stdio.h>
+long fact(int y);
+int main()
+{
+  int n;
+  long f;
+  printf("Enter an number to find its factorial\n");
+  scanf("%d", &n);
+    f = fact(n);
+    printf("the factorial of %d is %ld \n", n, f);
+}
+long fact(int y)
+{
+  if (y == 0)
+    return 1;
+  else
+    return(y * fact(y-1));
+}
+
+
+nth term fibonaacci
+
+#include <stdio.h>
+int fib(int);
+int main()
+{
+    int n;
+    int result;
+
+    printf("Enter the nth number required: ");
+    scanf("%d", &n);
+    if (n< 0)
+    {
+        printf("Please input positive value\n");
+    }
+    else
+    {
+        result = fib(n);
+        printf("The value is %d\n", n, result);
+    }
+    return 0;
+}
+int fib(int n)
+{
+    if (n==0)
+    {
+        return 0;
+    }
+    else if (n==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return(fib(n-1)+fib(n-2));
+    }
+}
