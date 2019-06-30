@@ -1,0 +1,48 @@
+// program for multiplying
+
+#include <stdio.h>
+ 
+void main()
+{
+  int  c, d, k, sum = 0;
+  int first[3][3], second[3][3], multiply[3][3];
+ 
+ 
+  printf("Enter elements of first matrix\n");
+ 
+  for (c = 0; c < 3; c++)
+    for (d = 0; d < 3; d++)
+      scanf("%d", &first[c][d]);
+ 
+    printf("Enter elements of second matrix\n");
+ 
+    for (c = 0; c < 3; c++)
+      for (d = 0; d < 3; d++)
+        scanf("%d", &second[c][d]);
+ 
+    for (c = 0; c < 3; c++) 
+    {
+      for (d = 0; d < 3; d++) 
+      {
+        for (k = 0; k < 3; k++) 
+        {
+          sum = sum + first[c][k]*second[k][d];
+        }
+ 
+        multiply[c][d] = sum;
+        sum = 0;
+      }
+    }
+ 
+    printf("Product of the matrices:\n");
+ 
+    for (c = 0; c < 3; c++) 
+    {
+      for (d = 0; d < 3; d++)
+        printf("%d ", multiply[c][d]);
+ 
+      printf("\n");
+    }
+  }
+ 
+
